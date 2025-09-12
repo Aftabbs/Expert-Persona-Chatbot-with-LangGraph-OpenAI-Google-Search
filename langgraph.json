@@ -1,0 +1,8 @@
+{
+  "version": "1",
+  "graphs": {
+    "agent": {
+      "entrypoint": "server:graph"
+    }
+  }
+}
