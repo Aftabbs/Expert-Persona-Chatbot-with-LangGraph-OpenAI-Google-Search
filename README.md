@@ -4,13 +4,13 @@ An interactive chatbot built with [LangGraph](https://github.com/langchain-ai/la
 
 Supports **expert personas**:
 
-* 🛰 **FloodRiskExpert** — Miami flood & climate risk advisor
-* ☁️ **AzureAIOpsExpert** — Azure cloud operations & FinOps expert
-* 🏢 **CondoAdvisorExpert** — Miami condo buyer/investor advisor
+* **FloodRiskExpert** — Miami flood & climate risk advisor
+* **AzureAIOpsExpert** — Azure cloud operations & FinOps expert
+* **CondoAdvisorExpert** — Miami condo buyer/investor advisor
 
 ---
 
-## 🚀 Features
+## Features
 
 * **Azure OpenAI GPT-4o** for reasoning & natural dialogue
 * **LangGraph orchestration** with memory & tool-calling
@@ -21,14 +21,14 @@ Supports **expert personas**:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 chatbot/
 ├─ requirements.txt
 ├─ .env
 ├─ langgraph_backend.py     # LangGraph + Azure + Tools + Personas
-├─ streamlit_frontend.py    # Streamlit chat UI
+├─ app.py    # Streamlit chat UI
 ├─ personas.py              # Persona definitions
 └─ tools/
    ├─ google_cse.py         # Low-level Google CSE client
@@ -42,7 +42,7 @@ chatbot/
 ### 1. Clone repo
 
 ```bash
-git clone https://github.com/yourusername/expert-chatbot.git
+git clone https://github.com/aftabbs/expert-chatbot.git
 cd expert-chatbot
 ```
 
@@ -75,7 +75,7 @@ LANGCHAIN_PROJECT=expert-chatbot
 
 ---
 
-## ▶️ Run
+## Run
 
 ### Option 1 — Streamlit UI
 
@@ -98,7 +98,7 @@ langgraph dev
 
 ---
 
-## 🔍 LangSmith Tracing
+## LangSmith Tracing
 
 Every run is logged automatically if `LANGCHAIN_TRACING_V2=true`.
 
