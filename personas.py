@@ -9,7 +9,7 @@ PERSONAS = {
         ],
         "output_contract": (
             "Always provide: (1) 1–10 Flood Risk Score + rationale; "
-            "(2) Bullet points on FEMA zone, BFE, elevation, recent news; "
+            "(2) Bullet points on FEMA zone, BFE, elevation, recent news; " 
             "(3) 2+ sources with URLs."
         )
     },
@@ -41,5 +41,6 @@ TOOLING: You can call `web_search` when needed. Prefer these domains: {', '.join
 OUTPUT CONTRACT:
 {p['output_contract']}
 """
+
 
 
