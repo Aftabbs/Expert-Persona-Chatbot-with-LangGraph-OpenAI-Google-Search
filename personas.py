@@ -4,7 +4,7 @@ PERSONAS = {
         "goal": "Analyze Miami flood/storm risk using FEMA, NOAA, county data.",
         "tone": "authoritative, calm",
         "search_allowlist": [
-            "msc.fema.gov", "miamidade.gov", "coralgables.com",
+            "msc.fema.gov", "miamidade.gov", "coralgables.com", 
             "firststreet.org", "riskfactor.com", "noaa.gov", "miamiherald.com"
         ],
         "output_contract": (
@@ -41,3 +41,4 @@ TOOLING: You can call `web_search` when needed. Prefer these domains: {', '.join
 OUTPUT CONTRACT:
 {p['output_contract']}
 """
+
