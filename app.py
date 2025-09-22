@@ -4,7 +4,7 @@ from langgraph_backend import chatbot
 from personas import PERSONAS
  
 CONFIG = {"configurable": {"thread_id": "demo-thread"}}  
- 
+  
 if "history" not in st.session_state:
     st.session_state["history"] = []
 if "persona" not in st.session_state:
@@ -31,6 +31,7 @@ if q := st.chat_input("Ask me something..."):
     ai_text = result["messages"][-1].content
     st.session_state["history"].append({"role": "assistant", "content": ai_text})
     with st.chat_message("assistant"): st.write(ai_text)
+
 
 
 
